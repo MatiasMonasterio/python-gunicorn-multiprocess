@@ -8,7 +8,7 @@ import os
 
 default_proc_name = 'python-gunicorn-multiprocess'
 chdir = './app'
-bind = 'localhost:' + os.environ.get('PORT', '8000')
+bind = '0.0.0.0:' + os.environ.get('PORT', '8000')
 disable_redirect_access_to_syslog = True
 reload = True
 
